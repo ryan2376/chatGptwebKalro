@@ -1,182 +1,256 @@
 /* Navbar */
 .navbar {
-    background-color: #f8f9fa;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0%;
-    width: 100%;
-    z-index: 100;
-    margin-right: 20px;
-    float: right;
-    align-items: center;
-  }
-  
-  .navbar-brand {
-    color: #333;
-    font-weight: bold;
-    font-size: 1.5rem;
-    float: left;
-  }
-  
-  .navbar-brand img {
-    width: 150px; /* Adjust the width as needed */
-    height: auto; /* Maintain the aspect ratio */
-  }
+background-color: #f8f9fa;
+padding: 10px;
+position: fixed;
+top: 0;
+left: 0%;
+width: 100%;
+z-index: 100;
+margin-right: 20px;
+float: right;
+align-items: center;
+}
 
-  .navbar-toggler {
-    border: none;
+.navbar-brand {
+color: #333;
+font-weight: bold;
+font-size: 1.5rem;
+float: left;
+}
+
+.navbar-brand img {
+width: 150px; /* Adjust the width as needed */
+height: auto; /* Maintain the aspect ratio */
+}
+
+.navbar-toggler {
+border: none;
+}
+
+.navbar-toggler-icon {
+background-color: #333;
+}
+
+.navbar-nav .nav-link {
+color: #333;
+font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+color: #007bff;
+}
+
+/* Hero Section */
+.jumbotron {
+background-color: rgb(85, 228, 8);
+padding: 100px 0;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.jumbotron h1 {
+font-size: 3rem;
+color: #051203;
+margin-bottom: 20px;
+}
+
+.jumbotron p {
+font-size: 1.2rem;
+margin-bottom: 30px;
+font-weight: bold;
+color: black;
+}
+
+.btn-primary {
+background-color:green;
+color: #fff;
+font-weight: bold;
+padding: 12px 24px;
+margin: 0;
+}
+
+.btn-primary:hover {
+background-color: #03b300;
+}
+
+/* About Section */
+.container {
+margin-top: 50px;
+}
+
+.container h2 {
+font-size: 2.5rem;
+color: #333;
+margin-bottom: 30px;
+}
+
+.container p {
+font-size: 1.2rem;
+color: #777;
+margin-bottom: 20px;
+}
+
+.img-fluid {
+max-width: 100%;
+height: auto;
+}
+
+/* Services Section */
+.container {
+margin-top: 50px;
+}
+
+.container h2 {
+font-size: 2.5rem;
+color: #333;
+margin-bottom: 30px;
+}
+
+.card {
+margin-bottom: 30px;
+border: none;
+border-radius: 0;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+max-height: 200px;
+object-fit: cover;
+}
+
+.card-title {
+font-size: 1.5rem;
+color: #333;
+font-weight: bold;
+}
+
+.card-text {
+font-size: 1.2rem;
+color: #777;
+}
+
+/* Projects Section */
+.container {
+margin-top: 50px;
+}
+
+.container h2 {
+font-size: 2.5rem;
+color: #333;
+margin-bottom: 30px;
+}
+
+.swiper-container {
+position: relative;
+overflow: hidden;
+width: 100%;
+}
+
+.swiper-wrapper {
+display: flex;
+transition: transform 0.3s ease;
+}
+
+.swiper-slide {
+width: 100%;
+padding: 0 15px;
+box-sizing: border-box;
+}
+
+.card {
+margin-bottom: 30px;
+border: none;
+border-radius: 0;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+max-height: 200px;
+object-fit: cover;
+}
+
+.card-title {
+font-size: 1.5rem;
+color: #333;
+font-weight: bold;
+}
+
+.card-text {
+font-size: 1.2rem;
+color: #777;
+}
+
+.image-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 20px;
+}
+
+.image-grid img {
+max-height: 500px;
+max-width: 500px;
+float: left;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    color: #555;
+    text-align: center;
   }
   
-  .navbar-toggler-icon {
-    background-color: #333;
-  }
-  
-  .navbar-nav .nav-link {
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #007bff;
-  }
-  
-  /* Hero Section */
-  .jumbotron {
-    background-color: rgb(85, 228, 8);
-    padding: 100px 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .jumbotron h1 {
-    font-size: 3rem;
-    color: #051203;
-    margin-bottom: 20px;
-  }
-  
-  .jumbotron p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    font-weight: bold;
-    color: black;
-  }
-  
-  .btn-primary {
-    background-color:green;
-    color: #fff;
-    font-weight: bold;
-    padding: 12px 24px;
-    margin: 0;
-  }
-  
-  .btn-primary:hover {
-    background-color: #03b300;
-  }
-  
-  /* About Section */
-  .container {
-    margin-top: 50px;
-  }
-  
-  .container h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 30px;
-  }
-  
-  .container p {
-    font-size: 1.2rem;
-    color: #777;
-    margin-bottom: 20px;
-  }
-  
-  .img-fluid {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Services Section */
-  .container {
-    margin-top: 50px;
-  }
-  
-  .container h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 30px;
-  }
-  
-  .card {
-    margin-bottom: 30px;
-    border: none;
-    border-radius: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-img-top {
-    max-height: 200px;
-    object-fit: cover;
-  }
-  
-  .card-title {
-    font-size: 1.5rem;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .card-text {
-    font-size: 1.2rem;
-    color: #777;
-  }
-  
-  /* Projects Section */
-  .container {
-    margin-top: 50px;
-  }
-  
-  .container h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 30px;
-  }
-  
-  .swiper-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-  }
-  
-  .swiper-wrapper {
+  .footer-content {
     display: flex;
-    transition: transform 0.3s ease;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
-  .swiper-slide {
-    width: 100%;
+  .footer-column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
     padding: 0 15px;
     box-sizing: border-box;
   }
   
-  .card {
-    margin-bottom: 30px;
-    border: none;
-    border-radius: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
   }
   
-  .card-img-top {
-    max-height: 200px;
+  .footer-column p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+  
+  .social-media a:hover {
+    background-color: #555;
+  }
+
+  .social-media a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .social-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-  }
-  
-  .card-title {
-    font-size: 1.5rem;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .card-text {
-    font-size: 1.2rem;
-    color: #777;
   }
